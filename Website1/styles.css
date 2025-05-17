@@ -41,9 +41,10 @@ body.no-scroll {
   transition: left 0.3s ease;
   z-index: 9;
 }
-.sidebar.open {
+
+<!-- sidebar.open {
   left: 0;
-}
+} -->
 
 .sidebar .logo {
   font-weight: bold;
