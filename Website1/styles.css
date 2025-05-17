@@ -88,3 +88,18 @@ display: none;
   margin-top: 60px;
   padding: 20px;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 8;
+}
+
+.overlay.active {
+  display: block;
+}
