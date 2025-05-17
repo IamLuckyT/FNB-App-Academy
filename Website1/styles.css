@@ -35,7 +35,7 @@ body.no-scroll {
   left: -240px;
   width: 240px;
   height: 100%;
-  background-color: var(--sidebar-bg);
+  background-color: #fff;
   transition: left 0.3s ease;
   padding: 10px;
   z-index: 9;
@@ -83,7 +83,7 @@ display: none;
   font-size: 14px;
   margin: 15px 0 5px 15px;
   font: bold;
-  color: #fff;
+  color: #555;
 }
 
 .main-content {
