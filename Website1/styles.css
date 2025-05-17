@@ -5,6 +5,10 @@ body {
   flex-direction: column;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .topbar {
   display: flex;
   background: #fff;
@@ -37,14 +41,28 @@ body {
   transition: left 0.3s ease;
   z-index: 9;
 }
-.sidebar.open{
+.sidebar.open {
   left: 0;
 }
 
-.sidebar .logo{
+.sidebar .logo {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+#close-sidebar {
+font-size: 24px;
+background: none;
+border: none;
+float: right;
+cursor: pointer;
+margin-bottom: 10px;
+display: none;
+}
+
+.sidebar.open #close-sidebar {
+  display: block;
 }
 
 .nav-links a {
