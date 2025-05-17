@@ -30,21 +30,22 @@ body.no-scroll {
 }
 
 .sidebar {
-  background-color: #fff;
-  padding: 10px;
-  width: 240px;
-  border-right: 1px solid #ccc;
-  height: 100vh;
-  position: fixed;  
-  overflow-y: auto;
+  position: fixed;
   top: 50px;
+  left: -240px;
+  width: 240px;
+  height: 100%;
+  background-color: var(--sidebar-bg);
   transition: left 0.3s ease;
+  padding: 10px;
   z-index: 9;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
 }
 
-<!-- sidebar.open {
+sidebar.open {
   left: 0;
-} -->
+} 
 
 .sidebar .logo {
   font-weight: bold;
@@ -91,13 +92,13 @@ display: none;
 }
 
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  display: none;
   z-index: 8;
 }
 
