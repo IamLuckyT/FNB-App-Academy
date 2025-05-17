@@ -15,15 +15,18 @@ body {
 }
 
 .sidebar .logo{
-  width: 100%;
-  height: auto;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .nav-links a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
-  color: #333;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 .nav-links a:hover {
@@ -31,11 +34,14 @@ body {
 }
 
 .section-title {
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: 14px;
+  margin: 15px 0 5px 15px;
+  font: bold;
+  color: #555;
 }
 
 .main-content {
-  margin-left: 220px;
+  margin-left: 240px;
   padding: 20px;
+  flex: 1;
 }
