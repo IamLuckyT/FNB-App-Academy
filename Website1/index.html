@@ -8,12 +8,15 @@
                                 "UTF-8" is one of the most widely used character encodings because it supports virtually all characters from different languages, special symbols, and emojis. It ensures that text is displayed correctly, preventing issues like garbled characters or unreadable symbols.
                             -->
     <meta name = "viewport" content ="width=device-width,initial-scale=1.0">
-    <title> Sidebar Menu</title> 
+    <title> Responsive Sidebar </title> 
     <link rel="Stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
+    <header class="top-bar">
+        <button id="menu-toggle"> &#9776</button> <!-- This is a button element with an ID of "menu-toggle". The content inside the button is the HTML entity for a hamburger icon (three horizontal lines). -->
         <div class="logo">Your logo </div>
+    </header>
+    <div class="sidebar">
         <nav class="nav-links">
             <a href="MyTube.html">Home</a>
             <a href="#">Shorts</a>
@@ -28,7 +31,10 @@
             <div class="section-title"> Subscriptions</div>
         </nav>
     </div>
-    <div class="main-content"> Main content</div>
+    <div class="main-content"> 
+        <h1>Welcome to MyTube</h1>
+        <p>This is where the content goes</p>
+    </div>
     <h1>City Tours</h1>
         <nav>
          <ul>
@@ -39,33 +45,13 @@
             <li><a href="">Contact Us</a></li>
         </ul id="MenuItems">
     </nav>
-    <h2>This is a heading</h2>
-    <h3>This is a heading</h3>
-    <h4>This is a heading</h4>
-    <h5>This is a heading</h5>
-    <h6>This is a heading</h6>
-    <nav>
-         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Account</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul id="MenuItems">
-    </nav>
-    <p>Hello Everyone and Welcome to City Tours, which is an online platform that provides you with the ability to view different cities in South Africa within our platform.
-    Below are links to the IT varsity and Google websites:
-        <ul> <a href="http://www.google.com">Click here to go to Google</a> </ul>
-        <ul> <a href="http://www.itvarsity.org">Click here to go to IT varsity</a></ul>
-
-    I am just editing so that it shows I made some contributions
-    </p>
+    <h2>Welcome to City Tours</h2>
     <img src="images/cablecar.jpg" height="150" />
     <img src="images/city.jpg" height="150" />
     <img src="images/plane.jpg" height="150" />
 
     I want to see if sync works
     <a href = "https://github.com/IamLuckyT" target="_blank"> GitHub Profile</a> 
-
+    <script src="script.js"></script>
 </body>
 </html>
