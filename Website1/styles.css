@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 10px;
+  width: 240px;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  position: fixed;  
+  overflow-y: auto;
+}
+
+.sidebar .logo{
+  width: 100%;
+  height: auto;
+}
+
+.nav-links a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  background-color: #f2f2f2;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
