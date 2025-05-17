@@ -1,7 +1,28 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+#menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
 }
 
 .sidebar {
@@ -12,6 +33,12 @@ body {
   height: 100vh;
   position: fixed;  
   overflow-y: auto;
+  top: 50px;
+  transition: left 0.3s ease;
+  z-index: 9;
+}
+.sidebar.open{
+  left: 0;
 }
 
 .sidebar .logo{
@@ -23,7 +50,6 @@ body {
 .nav-links a {
   display: block;
   padding: 10px 15px;
-  text-decoration: none;
   color: #000;
   text-decoration: none;
   border-radius: 8px;
@@ -41,7 +67,6 @@ body {
 }
 
 .main-content {
-  margin-left: 240px;
+  margin-top: 60px;
   padding: 20px;
-  flex: 1;
 }
