@@ -38,7 +38,7 @@ body.no-scroll {
   background-color: #fff;
   transition: left 0.3s ease;
   padding: 10px;
-  z-index: 9;
+  z-index: 10;
   border-right: 1px solid #ccc;
   overflow-y: auto;
 }
