@@ -9,7 +9,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.topbar {
+.top-bar {
   display: flex;
   background: #fff;
   align-items: center;
@@ -43,7 +43,7 @@ body.no-scroll {
   overflow-y: auto;
 }
 
-sidebar.open {
+.sidebar.open {
   left: 0;
 } 
 
