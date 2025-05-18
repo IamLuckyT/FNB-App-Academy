@@ -1,3 +1,4 @@
+/* ALL THE CODE THAT STARTS HERE IS FOR THE SIDEBAR */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -105,3 +106,4 @@ display: none;
 .overlay.active {
   display: block;
 }
+/*SIDEBAR CODE ENDS HERE*/

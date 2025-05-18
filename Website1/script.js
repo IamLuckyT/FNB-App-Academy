@@ -1,3 +1,4 @@
+/* ALL THE CODE THAT STARTS HERE IS FOR THE SIDEBAR */
 const toggleButton = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 const closeButton = document.getElementById('close-sidebar');
@@ -23,4 +24,4 @@ overlay.addEventListener('click', () => {
     
 document.body.classList.remove('no-scroll');
 });
-
+/*SIDEBAR CODE ENDS HERE*/
