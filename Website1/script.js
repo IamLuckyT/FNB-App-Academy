@@ -28,6 +28,7 @@ document.body.classList.remove('no-scroll');
 
 /* ALL THE CODE THAT STARTS HERE IS FOR THE LIGHT AND DARK MODE THEME */
 const themeToggle = document.getElementById('theme-toggle');
+
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
@@ -39,6 +40,12 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+const themeButton = document.getElementById('theme-toggle');
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
 //FOR LOADING SAVED THEME
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
@@ -47,3 +54,4 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 /*THEME CODE ENDS HERE*/
+

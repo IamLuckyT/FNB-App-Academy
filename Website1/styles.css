@@ -30,7 +30,7 @@ body.no-scroll {
   margin-right: 15px;
 }
 
-#toggle-theme {
+#theme-toggle {
   font-size: 14px;
   padding: 8px 12px;
   scroll-margin-left: 10px;
@@ -43,6 +43,13 @@ body.no-scroll {
 .top-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .sidebar {
@@ -147,9 +154,35 @@ body {
 
 /* OVERRIDES DARK MODE THEME */
 body.dark-mode {
-  --background-color: #1e1e1e;
-  --text-color: #ffffff;
-  --link-color: #2a2a2a;
-  --link-hover-color: #333333;
+  background-color: #1e1e1e;
+  color: #ffffff
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-links a:hover {
+  background-color: #333;
+}
+
+body.dark-mode .section-title {
+  color: #ccc;
 }
 /* LIGHT AND DARK MODE THEME ENDS HERE */
+
+/* ALL THE CODE THAT STARTS HERE IS FOR THE MAKING TOGGLE THEME RESPONSIVE */
+@media screen and (max-width: 600px)
+{
+    #theme-toggle {
+        font-size: 12px;
+        padding: 6ppx 10px
+    }
+}
+/* CODE ENDS HERE */
+
+/* CODE FOR SMOOTH TRANSITION START HERE */
+body, .sidebar, .nav-links a {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* CODE ENDS HERE */
