@@ -30,6 +30,14 @@ body.no-scroll {
   margin-right: 15px;
 }
 
+#menu-toggle, #close-sidebar {
+  color: var(--text-color);
+}
+
+body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
+  color: #fff;
+}
+
 #theme-toggle {
   font-size: 14px;
   padding: 8px 12px;
@@ -38,6 +46,7 @@ body.no-scroll {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .top-bar {
@@ -50,6 +59,20 @@ body.no-scroll {
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.top-bar .logo {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-bar, #theme-toggle, #menu-toggle, .logo {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .top-bar .logo {
+  color: #fff;
 }
 
 .sidebar {
@@ -77,13 +100,13 @@ body.no-scroll {
 }
 
 #close-sidebar {
-font-size: 24px;
-background: none;
-border: none;
-float: right;
-cursor: pointer;
-margin-bottom: 10px;
-display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: none;
 }
 
 .sidebar.open #close-sidebar {
@@ -183,7 +206,7 @@ body.dark-mode .section-title {
 }
 
 body.dark-mode #theme-toggle {
-  background-color: #333;
+  background-color: #2a2a2a;
   color: #fff;
 }
 
