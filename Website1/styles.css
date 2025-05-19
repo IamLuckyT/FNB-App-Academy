@@ -30,6 +30,21 @@ body.no-scroll {
   margin-right: 15px;
 }
 
+#toggle-theme {
+  font-size: 14px;
+  padding: 8px 12px;
+  scroll-margin-left: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+
 .sidebar {
   position: fixed;
   top: 50px;
