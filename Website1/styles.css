@@ -176,8 +176,10 @@ body {
 
 /* OVERRIDES DARK MODE THEME */
 body.dark-mode {
-  background-color: #121212;
-  color: #ffffff
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --link-hover-color: #333;
+  --link-color: #ccc;
 }
 
 body.dark-mode .main-content {
