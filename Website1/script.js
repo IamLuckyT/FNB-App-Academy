@@ -40,12 +40,6 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-const themeButton = document.getElementById('theme-toggle');
-
-themeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
-
 //FOR LOADING SAVED THEME
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');

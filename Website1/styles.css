@@ -9,7 +9,6 @@ body {
 body.no-scroll {
   overflow: hidden;
 }
-
 .top-bar {
   display: flex;
   background: #fff;
@@ -67,7 +66,9 @@ body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
   font-size: 20px;
 }
 
-
+.top-bar, #theme-toggle, #menu-toggle, .logo {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 body.dark-mode .top-bar .logo {
   color: #fff;
@@ -229,7 +230,7 @@ body.dark-mode #close-sidebar {
 @media screen and (max-width: 600px)
 {
     #theme-toggle {
-        font-size: 2px;
+        font-size: 12px;
         padding: 6px 10px
     }
 }
