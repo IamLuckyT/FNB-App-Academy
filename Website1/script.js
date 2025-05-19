@@ -25,3 +25,25 @@ overlay.addEventListener('click', () => {
 document.body.classList.remove('no-scroll');
 });
 /*SIDEBAR CODE ENDS HERE*/
+
+/* ALL THE CODE THAT STARTS HERE IS FOR THE LIGHT AND DARK MODE THEME */
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark-mode');
+    }
+    else {
+        localStorage.setItem('theme', 'light-mode');
+    }
+});
+
+//FOR LOADING SAVED THEME
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark-mode') {
+        document.body.classList.add('dark-mode');
+    }
+});
+/*THEME CODE ENDS HERE*/

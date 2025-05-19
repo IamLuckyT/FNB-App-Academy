@@ -107,3 +107,34 @@ display: none;
   display: block;
 }
 /*SIDEBAR CODE ENDS HERE*/
+
+/* ALL THE CODE THAT STARTS HERE IS FOR THE LIGHT AND DARK MODE THEME */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #f9f9f9;
+  --link-hover-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* APPLY TO SIDEBAR AND LINKS */
+.sidebar {
+  background-color: var(--background-color);
+}
+
+.nav-links a:hover {
+  background-color: var(--link-hover);
+}
+
+/* OVERRIDES DARK MODE THEME */
+body.dark-mode {
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --link-color: #2a2a2a;
+  --link-hover-color: #333333;
+}
+/* LIGHT AND DARK MODE THEME ENDS HERE */
