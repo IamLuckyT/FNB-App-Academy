@@ -67,9 +67,7 @@ body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
   font-size: 20px;
 }
 
-.top-bar, #theme-toggle, #menu-toggle, .logo {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+
 
 body.dark-mode .top-bar .logo {
   color: #fff;
@@ -78,9 +76,9 @@ body.dark-mode .top-bar .logo {
 .sidebar {
   position: fixed;
   top: 50px;
-  right: -240px;
+  left: -240px;
   width: 240px;
-  height: 50%;
+  height: 100%;
   background-color: #fff;
   transition: left 0.3s ease;
   padding: 10px;
@@ -90,7 +88,7 @@ body.dark-mode .top-bar .logo {
 }
 
 .sidebar.open {
-  left: 0;
+  right: 0;
 } 
 
 .sidebar .logo {
