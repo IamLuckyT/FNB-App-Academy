@@ -229,7 +229,7 @@ body.dark-mode #close-sidebar {
 @media screen and (max-width: 600px)
 {
     #theme-toggle {
-        font-size: 12px;
+        font-size: 2px;
         padding: 6px 10px
     }
 }
