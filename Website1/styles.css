@@ -154,20 +154,27 @@ body {
 
 /* OVERRIDES DARK MODE THEME */
 body.dark-mode {
-  background-color: #1e1e1e;
+  background-color: #121212;
   color: #ffffff
 }
 
 body.dark-mode .sidebar {
   background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+  color: #ffffff;
+  background-color: transparent;
 }
 
 body.dark-mode .nav-links a:hover {
   background-color: #333;
+  color: #ffffff;
 }
 
 body.dark-mode .section-title {
-  color: #ccc;
+  color: #cccccc;
 }
 /* LIGHT AND DARK MODE THEME ENDS HERE */
 
@@ -182,7 +189,7 @@ body.dark-mode .section-title {
 /* CODE ENDS HERE */
 
 /* CODE FOR SMOOTH TRANSITION START HERE */
-body, .sidebar, .nav-links a {
-  transition: background-color 0.3s, color 0.3s;
+body, .sidebar, .nav-links a, .main-content{
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 /* CODE ENDS HERE */
