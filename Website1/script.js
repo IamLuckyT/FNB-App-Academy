@@ -1,4 +1,4 @@
-/* ALL THE CODE THAT STARTS HERE IS FOR THE SIDEBAR */
+/* SIDEBAR CODE */
 const toggleButton = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 const closeButton = document.getElementById('close-sidebar');
@@ -7,33 +7,32 @@ const overlay = document.getElementById('overlay');
 toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('open');
     overlay.classList.toggle('active');
-
-document.body.classList.toggle('no-scroll');
+    document.body.classList.toggle('no-scroll');
 });
 
 closeButton.addEventListener('click', () => {
     sidebar.classList.remove('open');
     overlay.classList.remove('active');
-
-document.body.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
 });
 
 overlay.addEventListener('click', () => {
     sidebar.classList.remove('open');
     overlay.classList.remove('active');
-    
-document.body.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
 });
-/*SIDEBAR CODE ENDS HERE*/
 
-/* ALL THE CODE THAT STARTS HERE IS FOR THE LIGHT AND DARK MODE THEME */
+/* THEME TOGGLE CODE */
 const themeToggle = document.getElementById('theme-toggle');
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
-    if (localStorage.getItem('theme') === 'dark-mode') {
-        document.body.classList.add('dark-mode');
+    // Save new theme state
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        localStorage.setItem('theme', 'light-mode');
     }
 });
 
@@ -45,4 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 /*THEME CODE ENDS HERE*/
+
+
 
