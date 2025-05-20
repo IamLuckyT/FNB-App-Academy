@@ -239,6 +239,15 @@ body.dark-mode .top-bar {
   border-bottom: 1px solid #444;
 }
 
+body.dark-mode .theme-toggle-wrapper {
+  border-top: 1px solid #444;
+}
+
+body.dark-mode .theme-toggle-wrapper button {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
 body.dark-mode #menu-toggle,
 body.dark-mode #close-sidebar {
   color: #fff;
