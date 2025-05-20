@@ -159,6 +159,15 @@ body.dark-mode .top-bar .logo {
   border-top: 1px solid #ccc;
 }
 
+.theme-toggle-wrapper button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /*SIDEBAR CODE ENDS HERE*/
 
 /* ALL THE CODE THAT STARTS HERE IS FOR THE LIGHT AND DARK MODE THEME */
