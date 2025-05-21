@@ -38,6 +38,8 @@ body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
 }
 
 #theme-toggle {
+  margin: 10px;
+  align-self: center;
   font-size: 14px;
   padding: 8px 12px;
   scroll-margin-left: 10px;
@@ -45,7 +47,6 @@ body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .top-bar {
@@ -248,8 +249,7 @@ body.dark-mode .theme-toggle-wrapper button {
   color: #fff;
 }
 
-body.dark-mode #menu-toggle,
-body.dark-mode #close-sidebar {
+body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
   color: #fff;
 }
 
