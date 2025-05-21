@@ -1,4 +1,33 @@
-/* Global body styles */
+/*COLOR CODES USED ARE SHOWN BELOW WITH THEIR NAMES
+
+Background colors:
+
+Light Mode: #ffffff (white) 
+Dark Mode: #121212 (almost black)
+
+Text colors:
+
+Light Mode: #000000 (black) 
+Dark Mode: #ffffff (white)
+
+Link colors:
+
+Light Mode: #007BFF (a medium blue) 
+Dark Mode: #66b3ff (a soft light blue for visibility on dark backgrounds)
+
+Hover colors:
+
+Light Mode: #f2f2f2 (light gray for hover on links/buttons) 
+Dark Mode: #333333 (darker gray for hover on links/buttons)
+
+Button colors:
+
+Light Mode: #ddd (light gray background for buttons) 
+Dark Mode: #2a2a2a (dark gray background for buttons)
+
+Borders: Light Mode: #ccc (light gray border) 
+Dark Mode: #444 (darker gray border for contrast)*/
+
 body {
   margin: 0; /* Removes default margin */
   font-family: Arial, sans-serif; /* Sets default font */
