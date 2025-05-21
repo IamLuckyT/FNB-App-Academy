@@ -157,7 +157,7 @@ body.dark-mode .top-bar .logo {
 
 .theme-toggle-wrapper {
   padding: 10px 15px;
-  border-top: 1px solid #ccc;
+  margin-top: auto; /* Makes sure button stays at the bottom*/
 }
 
 .theme-toggle-wrapper button {
