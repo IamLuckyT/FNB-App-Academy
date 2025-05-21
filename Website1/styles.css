@@ -78,7 +78,7 @@ body.dark-mode .top-bar .logo {
 .sidebar {
   position: fixed;
   top: 50px;
-  left: -240px;
+  left: -100%; /* Makes sure sidebar is completely hidden no matter the width*/
   width: 240px;
   height: 100vh; /*full viewport height*/
   background-color: #fff;
