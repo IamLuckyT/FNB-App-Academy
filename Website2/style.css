@@ -57,7 +57,7 @@ body {
 
 /* BOTTOM TABS*/
 
-#bottom-tabs {
+#bottom-tab {
     position: fixed;
     bottom: 0;                                      /*Makes sure tabs are forever at the bottom*/
     left: 0;
@@ -67,7 +67,7 @@ body {
     background-color: forestgreen;
 }
 
-#bottom-tabs a {
+#bottom-tab a {
     display: block;
     width: 50%;                                      /*Half of screen width*/
     height: 35px;
