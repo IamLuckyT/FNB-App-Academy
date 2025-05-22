@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+#header {
+    position: fixed;                                /*Makes sure header remains fixed at the top on the left side of the screen*/
+    top: 0px;
+    left: 0px;
+    z-index: 500;                                   /*header will always be at the top most part of the screen*/
+    width: 100%;                                    /*Takes up full width of the screen*/
+    height: 80px;
+    background-image: url('images/wood-bg.png');    /*Set's the wood image as the background of the header*/
+    background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
+}
+
+/*IMAGE FOR THE HEADER (Logo for Zoo)*/
+#header img {
+    display: block;                                 /*Makes sure we are able to adjust height and width of the image*/
+    margin: auto;                                   /*Centralize object on the header of the screen (horizontally centralized*/
+    height: 70%;
+    padding-top: 15px;                              /*Leaves some space from top of image*/
+}
