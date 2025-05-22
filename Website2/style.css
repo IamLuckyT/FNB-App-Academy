@@ -16,9 +16,35 @@ body {
 }
 
 /*IMAGE FOR THE HEADER (Logo for Zoo)*/
+
 #header img {
     display: block;                                 /*Makes sure we are able to adjust height and width of the image*/
     margin: auto;                                   /*Centralize object on the header of the screen (horizontally centralized*/
     height: 70%;
     padding-top: 15px;                              /*Leaves some space from top of image*/
+}
+
+/*TOP TAB*/
+
+#top-tab {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+}
+
+/*Hyperlinks for the top tabs*/
+#top-tab a {
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;                             /*Center aligns the hyperlinks*/
+    text-decoration: none;
+    padding-top: 12px;
 }
