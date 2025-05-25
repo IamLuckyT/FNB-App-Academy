@@ -15,7 +15,7 @@ body {
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
 
-/********************IMAGE FOR THE HEADER (Logo for Zoo)*******************/
+/******************** IMAGE FOR THE HEADER (Logo for Zoo) *******************/
 
 #header img {
     display: block;                                 /*Makes sure we are able to adjust height and width of the image*/
@@ -49,7 +49,7 @@ body {
     padding-top: 12px;
 }
 
-/**************************** MAIN HOME**********************/
+/***************************** MAIN HOME **********************/
 
 #main-home {
     margin-top: 120px;                              /*Leaves space of 120px from top of screen till top of main home section. The 120px is derived from height of header(80px) + height of top tabs (40px) = 120px*/
@@ -98,7 +98,7 @@ body {
     background-color: darkolivegreen;           /*Changes background color of the second tab when hovered*/
 }
 
-/**************************** BOTTOM TABS**********************/
+/**************************** MAIN **********************/
 #main {
     margin-top: 119px;                            /*Leaves space of 119px from top of screen till top of main section. The 119px is derived from height of header(80px) + height of top tabs (40px) - 1px border = 119px*/
     background: url('images/map-blur.png');       /*Sets the background image for the main section*/  
@@ -109,3 +109,14 @@ body {
     padding-bottom: 50px;                         /*Ensures that padding is included in the total width and height calculations*/
 }
 
+/**************************** INFO BOX **********************/
+a.info-box {
+    text-decoration: none;                        /*Removes underline from hyperlinks*/
+    background: rgba(255, 255, 255, .8);        /*Sets a semi-transparent white background for the info box*/
+    width: 90%;                                   /*Sets the width of the info box to 90% of the parent element*/
+    height: 90px;                                 /*Sets the height of the info box to 90px*/
+    display: block;                               /*Makes the info box a block-level element*/
+    margin: auto;                                 /*Centers the info box horizontally within its parent element*/
+    margin-top: 12;                               /*Adds a a gap of 12px between info boxs*/
+    padding: 1px;                                 /*Adds padding of 1px around the content inside the info box*/   
+}
