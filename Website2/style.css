@@ -49,6 +49,25 @@ body {
     padding-top: 12px;
 }
 
+#top-tab a:hover {
+    background-color: darkgreen;                /*Changes background color of bottom tabs when hovered*/
+}
+#top-tab a:active {
+    background-color: lightgreen;               /*Changes background color of bottom tabs when clicked*/
+}
+#top-tab a:first-child {
+    float: left;                                  /*Aligns the first tab to the left*/
+}
+#top-tab a:last-child {
+    float: right;                                 /*Aligns the last tab to the right*/
+}
+#top-tab a:nth-child(2) {
+    margin: 0 auto;                               /*Centers the second tab in the middle of the bottom tabs*/
+}
+#top-tab a:nth-child(2):hover {
+    background-color: darkolivegreen;           /*Changes background color of the second tab when hovered*/
+}
+
 /***************************** MAIN HOME **********************/
 
 #main-home {
