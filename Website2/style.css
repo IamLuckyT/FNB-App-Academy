@@ -105,9 +105,7 @@ body {
     background-repeat: repeat-y;                  /*Repeats the image vertically until the full height of the screen*/
 }
 #content {
-    width: 100%;                                   /*Sets the width of the content to 100% of the main section*/
-    height: 100%;                                  /*Sets the height of the content to 100% of the main section*/
-    padding: 20px;                                 /*Adds padding around the content*/
-    box-sizing: border-box;                        /*Ensures that padding is included in the total width and height calculations*/
+    padding-top: 1px;                             /*Adds padding around the content*/
+    padding-bottom: 50px;                         /*Ensures that padding is included in the total width and height calculations*/
 }
 
