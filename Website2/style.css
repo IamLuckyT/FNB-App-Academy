@@ -50,7 +50,7 @@ body {
 }
 
 #top-tab a:hover {
-    background-color: darkgreen;                /*Changes background color of bottom tabs when hovered*/
+    background-color: rgb(75, 165, 75);                /*Changes background color of bottom tabs when hovered*/
 }
 #top-tab a:active {
     background-color: lightgreen;               /*Changes background color of bottom tabs when clicked*/
