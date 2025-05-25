@@ -10,7 +10,7 @@ body {
     left: 0px;
     z-index: 500;                                   /*header will always be at the top most part of the screen*/
     width: 100%;                                    /*Takes up full width of the screen*/
-    height: 100%;                                   
+    height: 80px;                                   
     background-image: url('images/wood-bg.png');    /*Set's the wood image as the background of the header*/
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
@@ -118,12 +118,32 @@ a.info-box {
     height: 90px;                                 /*Sets the height of the info box to 90px*/
     display: block;                               /*Makes the info box a block-level element*/
     margin: auto;                                 /*Centers the info box horizontally within its parent element*/
-    margin-top: 12px;                               /*Adds a a gap of 12px between info boxs*/
+    margin-top: 12px;                             /*Adds a a gap of 12px between info boxs*/
     padding: 1px;                                 /*Adds padding of 1px around the content inside the info box*/   
 }
 
 .info-box img {
     float: left;                                  /*Floats the image to the left side of the info box*/
-    height: 70px;                                  /*Sets the height of the image to 80px*/
-    margin: 10px;                                  /*Adds a right margin of 10px to create space between the image and text*/
+    height: 70px;                                 /*Sets the height of the image to 80px*/
+    margin: 10px;                                 /*Adds a right margin of 10px to create space between the image and text*/
+}
+
+.info-box h3 {
+    padding: 0;                                    
+    margin-bottom: 0;                             /*Removes default margin from the heading*/
+    width: 90%;
+    color: #572800;                             /*Sets the text color of the heading to a dark brown color*/    
+}
+
+.info-box p {
+    padding: 0;                                   
+    margin: 0;                                
+    width: 90%;
+    color: #131313;                             /*Sets the text color of the paragraph to a dark gray color*/
+}
+
+.info-box img.right {
+    float: right;                                 /*Floats the image to the right side of the info box*/
+    margin-top: 25px;                            
+    height: 40px;                                 /*Sets the height of the image to 40px*/
 }
