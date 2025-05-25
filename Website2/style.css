@@ -10,7 +10,7 @@ body {
     left: 0px;
     z-index: 500;                                   /*header will always be at the top most part of the screen*/
     width: 100%;                                    /*Takes up full width of the screen*/
-    height: 80px;                                   
+    height: 100%;                                   
     background-image: url('images/wood-bg.png');    /*Set's the wood image as the background of the header*/
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
