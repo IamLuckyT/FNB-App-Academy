@@ -49,24 +49,58 @@ body {
     padding-top: 12px;
 }
 
+/*Suggestions from Copilot to add hover effect on top tabs*/
 #top-tab a:hover {
-    background-color: rgb(75, 165, 75);                /*Changes background color of bottom tabs when hovered*/
+    background-color: darkolivegreen;             /*Changes background color of top tabs when hovered*/
 }
 #top-tab a:active {
-    background-color: lightgreen;               /*Changes background color of bottom tabs when clicked*/
+    background-color: lightgreen;                 /*Changes background color of top tabs when clicked*/
 }
 #top-tab a:first-child {
-    float: left;                                  /*Aligns the first tab to the left*/
+    float: left;                                    /*Aligns the first tab to the left*/
 }
 #top-tab a:last-child {
-    float: right;                                 /*Aligns the last tab to the right*/
+    float: right;                                   /*Aligns the last tab to the right*/
 }
 #top-tab a:nth-child(2) {
-    margin: 0 auto;                               /*Centers the second tab in the middle of the bottom tabs*/
+    margin: 0 auto;                                 /*Centers the second tab in the middle of the top tabs*/
 }
 #top-tab a:nth-child(2):hover {
-    background-color: darkolivegreen;           /*Changes background color of the second tab when hovered*/
+    background-color: darkolivegreen;             /*Changes background color of the second tab when hovered*/
 }
+/**************************** TOP TABS FOR MOBILE **********************/
+@media only screen and (max-width: 600px) {
+    #top-tab a {
+        width: 50%;                                /*Changes the width of the top tabs to 50% for mobile devices*/
+    }
+    #top-tab a:nth-child(2) {
+        width: 100%;                               /*Makes the second tab take up full width on mobile devices*/
+    }
+    #top-tab a:nth-child(2):hover {
+        background-color: darkolivegreen;       /*Changes background color of the second tab when hovered on mobile devices*/
+    }
+}
+/**************************** HEADER AND TOP TABS **********************/
+#header, #top-tab {
+    box-sizing: border-box;                        /*Ensures that padding and border are included in the total width and height calculations*/
+    border-bottom: 1px solid black;              /*Adds a 1px solid black border at the bottom of the header and top tabs*/
+    background-color: forestgreen;               /*Sets the background color of the header and top tabs to forest green*/
+}
+/**************************** HEADER AND TOP TABS FOR MOBILE **********************/
+@media only screen and (max-width: 600px) {
+    #header, #top-tab {
+        height: 60px;                              /*Changes the height of the header and top tabs to 60px for mobile devices*/
+    }
+    #header img {
+        height: 50%;                               /*Adjusts the height of the image in the header for mobile devices*/
+        padding-top: 5px;                          /*Reduces padding at the top of the image in the header for mobile devices*/
+    }
+    #top-tab {
+        height: 30px;                              /*Changes the height of the top tabs to 30px for mobile devices*/
+    }
+}
+
+
 
 /***************************** MAIN HOME **********************/
 
