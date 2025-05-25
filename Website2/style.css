@@ -101,7 +101,7 @@ body {
 /**************************** MAIN **********************/
 #main {
     margin-top: 119px;                            /*Leaves space of 119px from top of screen till top of main section. The 119px is derived from height of header(80px) + height of top tabs (40px) - 1px border = 119px*/
-    background: url('images/map-blur.png'); /*Sets the background image for the main section*/  
+    background: url('images/map-blur.png');       /*Sets the background image for the main section*/  
     background-repeat: repeat-y;                  /*Repeats the image vertically until the full height of the screen*/
 }
 
