@@ -15,7 +15,7 @@ body {
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
 
-/*IMAGE FOR THE HEADER (Logo for Zoo)*/
+/********************IMAGE FOR THE HEADER (Logo for Zoo)*******************/
 
 #header img {
     display: block;                                 /*Makes sure we are able to adjust height and width of the image*/
@@ -24,7 +24,7 @@ body {
     padding-top: 15px;                              /*Leaves some space from top of image*/
 }
 
-/*TOP TAB*/
+/**************************** TOP TAB **********************/
 
 #top-tab {
     position: fixed;
@@ -49,13 +49,13 @@ body {
     padding-top: 12px;
 }
 
-/* MAIN HOME*/
+/**************************** MAIN HOME**********************/
 
 #main-home {
     margin-top: 120px;                              /*Leaves space of 120px from top of screen till top of main home section. The 120px is derived from height of header(80px) + height of top tabs (40px) = 120px*/
 }
 
-/* BOTTOM TABS*/
+/**************************** BOTTOM TABS **********************/
 
 #bottom-tab {
     position: fixed;
@@ -69,7 +69,7 @@ body {
 
 #bottom-tab a {
     display: block;
-    width: 50%;                                      /*Half of screen width*/
+    width: 50%;                                    /*Half of screen width*/
     height: 35px;
     font-weight: 700;
     color: white;
@@ -78,4 +78,36 @@ body {
     padding-top: 12px;
 }
 
+/*Suggestions from Copilot to add hover effect on bottom tabs*/
+#bottom-tab a:hover {
+    background-color: darkgreen;                /*Changes background color of bottom tabs when hovered*/
+}
+#bottom-tab a:active {
+    background-color: lightgreen;               /*Changes background color of bottom tabs when clicked*/
+}
+#bottom-tab a:first-child {
+    float: left;                                  /*Aligns the first tab to the left*/
+}
+#bottom-tab a:last-child {
+    float: right;                                 /*Aligns the last tab to the right*/
+}
+#bottom-tab a:nth-child(2) {
+    margin: 0 auto;                               /*Centers the second tab in the middle of the bottom tabs*/
+}
+#bottom-tab a:nth-child(2):hover {
+    background-color: darkolivegreen;           /*Changes background color of the second tab when hovered*/
+}
+
+/**************************** BOTTOM TABS**********************/
+#main {
+    margin-top: 119px;                            /*Leaves space of 119px from top of screen till top of main section. The 119px is derived from height of header(80px) + height of top tabs (40px) - 1px border = 119px*/
+    background: url('images/map-blur.png');       /*Sets the background image for the main section*/  
+    background-repeat: repeat-y;                  /*Repeats the image vertically until the full height of the screen*/
+}
+#content {
+    width: 100%;                                   /*Sets the width of the content to 100% of the main section*/
+    height: 100%;                                  /*Sets the height of the content to 100% of the main section*/
+    padding: 20px;                                 /*Adds padding around the content*/
+    box-sizing: border-box;                        /*Ensures that padding is included in the total width and height calculations*/
+}
 
