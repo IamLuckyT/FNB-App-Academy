@@ -14,12 +14,6 @@ body {
     background-image: url('images/wood-bg.png');    /*Set's the wood image as the background of the header*/
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
-@media (max-width: 768px) {
-    .header {
-        height: 50vh;                               /*Sets the height of the header to 50% of the viewport height on smaller screens*/
-    }
-}
-
 
 /******************** IMAGE FOR THE HEADER (Logo for Zoo) *******************/
 
