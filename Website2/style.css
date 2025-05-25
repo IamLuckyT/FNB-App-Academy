@@ -10,10 +10,16 @@ body {
     left: 0px;
     z-index: 500;                                   /*header will always be at the top most part of the screen*/
     width: 100%;                                    /*Takes up full width of the screen*/
-    height: 80px;
+    height: 80px;                                   
     background-image: url('images/wood-bg.png');    /*Set's the wood image as the background of the header*/
     background-repeat: repeat-x;                    /*Repeats the image horizontally until the full width of the screen*/
 }
+@media (max-width: 768px) {
+    .header {
+        height: 50vh;                               /*Sets the height of the header to 50% of the viewport height on smaller screens*/
+    }
+}
+
 
 /******************** IMAGE FOR THE HEADER (Logo for Zoo) *******************/
 
@@ -101,9 +107,10 @@ body {
 /**************************** MAIN **********************/
 #main {
     margin-top: 119px;                            /*Leaves space of 119px from top of screen till top of main section. The 119px is derived from height of header(80px) + height of top tabs (40px) - 1px border = 119px*/
-    background-image: url('images/map-blur.png');       /*Sets the background image for the main section*/  
+    background: url('images/map-blur.png'); /*Sets the background image for the main section*/  
     background-repeat: repeat-y;                  /*Repeats the image vertically until the full height of the screen*/
 }
+
 #content {
     padding-top: 1px;                             /*Adds padding around the content*/
     padding-bottom: 50px;                         /*Ensures that padding is included in the total width and height calculations*/
@@ -117,7 +124,7 @@ a.info-box {
     height: 90px;                                 /*Sets the height of the info box to 90px*/
     display: block;                               /*Makes the info box a block-level element*/
     margin: auto;                                 /*Centers the info box horizontally within its parent element*/
-    margin-top: 12;                               /*Adds a a gap of 12px between info boxs*/
+    margin-top: 12px;                               /*Adds a a gap of 12px between info boxs*/
     padding: 1px;                                 /*Adds padding of 1px around the content inside the info box*/   
 }
 
