@@ -6,7 +6,7 @@ body {
 
 #header {
     position: fixed;                                /*Makes sure header remains fixed at the top on the left side of the screen*/
-    top: 0px;
+    top: 0px;                                       
     left: 0px;
     z-index: 500;                                   /*header will always be at the top most part of the screen*/
     width: 100%;                                    /*Takes up full width of the screen*/
