@@ -147,3 +147,14 @@ a.info-box {
     margin-top: 25px;                            
     height: 40px;                                 /*Sets the height of the image to 40px*/
 }
+
+/**************************** INFO BOX FULL **********************/
+#info-box-full {
+    background: rgba(255, 255, 255, 0.8);       /*Sets a semi-transparent white background for the info box*/
+    width: 90%;                                   /*Sets the width of the info box to 90% of the parent element*/
+    height: 90px;                                 /*Sets the height of the info box to 90px*/
+    display: block;                               /*Makes the info box a block-level element*/
+    margin: auto;                                 /*Centers the info box horizontally within its parent element*/
+    margin-top: 12px;                             /*Adds a gap of 12px between info boxes*/
+    padding: 10px;                                 /*Adds padding of 10px around the content inside the info box*/   
+}
