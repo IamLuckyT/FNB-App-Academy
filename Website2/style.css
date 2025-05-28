@@ -62,7 +62,7 @@ body {
 #main-home img {
     width: 100%;                                   /*Sets the width of the image to 100% of the parent element*/
     height: 100%;                                  /*Sets the height of the image to 100% of the parent element*/
-    object-fit: ;cover;                            /*Ensures that the image covers the entire area of the parent element without distorting its aspect ratio*/
+    object-fit: cover;                            /*Ensures that the image covers the entire area of the parent element without distorting its aspect ratio*/
 }
 /**************************** BOTTOM TABS **********************/
 
