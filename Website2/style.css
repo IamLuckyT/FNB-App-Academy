@@ -53,14 +53,17 @@ body {
 
 #main-home {
     margin-top: 120px;                              /*Leaves space of 120px from top of screen till top of main home section. The 120px is derived from height of header(80px) + height of top tabs (40px) = 120px*/
-}
-
-#main-home img {
-    width: 100%;                                   /*Sets the width of the image to 100% of the parent element*/
-    height: auto;                                  /*Sets the height of the image to auto, maintaining aspect ratio*/
+    width: 100vw;                                   /*Sets the width of the main home section to 100% of the viewport width*/
+    height: 100vh;                                  /*Sets the height of the main home section to 100% of the viewport height*/
     overflow: hidden;                              /*Ensures that any overflow content is hidden*/
 }
 
+
+#main-home img {
+    width: 100%;                                   /*Sets the width of the image to 100% of the parent element*/
+    height: 100%;                                  /*Sets the height of the image to 100% of the parent element*/
+    object-fit: ;cover;                            /*Ensures that the image covers the entire area of the parent element without distorting its aspect ratio*/
+}
 /**************************** BOTTOM TABS **********************/
 
 #bottom-tab {
