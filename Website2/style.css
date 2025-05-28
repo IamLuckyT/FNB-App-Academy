@@ -128,7 +128,7 @@ a.info-box {
     margin: 10px;                                 /*Adds a right margin of 10px to create space between the image and text*/
 }
 
-.info-box h3 {
+.info-box h1 {
     padding: 0;                                    
     margin-bottom: 0;                             /*Removes default margin from the heading*/
     width: 90%;
@@ -156,5 +156,12 @@ a.info-box {
     display: block;                               /*Makes the info box a block-level element*/
     margin: auto;                                 /*Centers the info box horizontally within its parent element*/
     margin-top: 12px;                             /*Adds a gap of 12px between info boxes*/
-    padding: 10px;                                 /*Adds padding of 10px around the content inside the info box*/   
+    padding: 10px;                                /*Adds padding of 10px around the content inside the info box*/   
 }
+
+#info-box-full img {
+    width: 100%;                                    /*Sets the width of the image to 100% of the parent element*/
+    height: auto;                                 /*Maintains the aspect ratio of the image while scaling it*/
+    margin-bottom: 10px;                          /*Adds a bottom margin of 10px to create space between the image and text*/
+}
+
