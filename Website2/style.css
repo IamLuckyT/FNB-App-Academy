@@ -161,7 +161,5 @@ a.info-box {
 
 #info-box-full img {
     width: 100%;                                    /*Sets the width of the image to 100% of the parent element*/
-    height: auto;                                 /*Maintains the aspect ratio of the image while scaling it*/
-    margin-bottom: 10px;                          /*Adds a bottom margin of 10px to create space between the image and text*/
 }
 
