@@ -2,11 +2,12 @@
 
 <p> 
   The repo contains all projects I am currently busy with, which are tasks given to me by FNB App Academy.
+  So far the repo contains two projects all under the websites folder
   <br>
-  So far the repo contains two projects all under the websites folder which are:
+   To view the sites you can click on the links below:
   <ul>
-    <li><a href="https://github.com/IamLuckyT/FNB-App-Academy/tree/main/Website1"> Website1</a></li>
-    <li><a href="https://github.com/IamLuckyT/FNB-App-Academy/tree/main/Website2"> Website2</a></li>
+    <li><a href="https://github.com/IamLuckyT/FNB-App-Academy/tree/main/Website1/index.html"> Website1</a></li>
+    <li><a href="https://github.com/IamLuckyT/FNB-App-Academy/tree/main/Website2/index.html"> Website2</a></li>
   </ul>
 
 </p>
