@@ -10,11 +10,11 @@
         <a href="https://iamluckyt.github.io/FNB-App-Academy/Website1/index.html"> Website1</a>
     </li>
     <li>
+      <a href="https://iamluckyt.github.io/FNB-App-Academy/WebsiteA/index.html"> WebsiteA</a>
+    </li> 
+    <li>
       <a href="https://iamluckyt.github.io/FNB-App-Academy/Website2/index.html"> Website2</a>
-    </li>
-      <li>
-      <a href="https://iamluckyt.github.io/FNB-App-Academy/WebsiteA/index.html"> Website2</a>
-    </li>    
+    </li>  
   </ul>
 
 </p>
