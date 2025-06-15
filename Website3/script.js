@@ -30,17 +30,22 @@ function digitBtnPressed(button){
     var finalTotal;                                                   //Variable to store the result
 
     //Checks which operator was clicked and performs the corresponding operation
-    if(currentOperator === "+"){
-      finalTotal = value1 + value2;
-    } else if(currentOperator === "-"){
-      finalTotal = value1 - value2;
-    } else if(currentOperator === "*"){
-      finalTotal = value1 * value2;
-    } else if(currentOperator === "/"){
-      finalTotal = value1 / value2;
+    switch(currentOperator){
+      case "+":
+        finalTotal = value1 + value2;                               //Adds the two values
+        break;
+      case "-":
+        finalTotal = value1 - value2;                               //Subtracts the two values
+        break;
+      case "*":
+        finalTotal = value1 * value2;                               //Multiplies the two values
+        break;
+      case "/":
+        finalTotal = value1 / value2;                               //Divides the two values
+        break;
     }
-
     document.getElementById("inputBox").value = finalTotal;         //Displays the result in the input box
     newLine = true;                                             //Sets newLine to true so that the next button clicked will replace the value
+    value1 = 0;
   }
 }
