@@ -9,4 +9,5 @@ function digitBtnPressed(button){
   } else {
   var currentValue = document.getElementById("inputBox").value;       //Gets the current value in the input box
   document.getElementById("inputBox").value = currentValue + button; //Adds the value clicked and the button
+  }
 }
