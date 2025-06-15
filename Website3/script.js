@@ -1,5 +1,5 @@
 //Global variable since its outside the function
-var newLine = true;
+var newLine = true;                                      
 
 //Makes sure that when a user clicks on the button, the button will appear on the screen
 function digitBtnPressed(button){
@@ -11,6 +11,7 @@ function digitBtnPressed(button){
   document.getElementById("inputBox").value = currentValue + button; //Adds the value clicked and the button
   }
 
+  //Event handler for when AC button is pressed
   function btnACPressed(){
     document.getElementById("inputBox").value = "";           //Clears the input box
     newLine = true;                                           //Sets newLine to true so that the next button clicked will replace the value
