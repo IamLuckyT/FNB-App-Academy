@@ -10,4 +10,10 @@ function digitBtnPressed(button){
   var currentValue = document.getElementById("inputBox").value;       //Gets the current value in the input box
   document.getElementById("inputBox").value = currentValue + button; //Adds the value clicked and the button
   }
+
+  function btnACPressed(){
+    document.getElementById("inputBox").value = "";           //Clears the input box
+    newLine = true;                                           //Sets newLine to true so that the next button clicked will replace the value
+  }
+
 }
