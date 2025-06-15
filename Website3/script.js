@@ -1,5 +1,7 @@
 //Global variable since its outside the function
-var newLine = true;                                      
+var newLine = true;              
+var value1;
+var currentOperator;                        
 
 //Makes sure that when a user clicks on the button, the button will appear on the screen
 function digitBtnPressed(button){
@@ -17,4 +19,28 @@ function digitBtnPressed(button){
     newLine = true;                                           //Sets newLine to true so that the next button clicked will replace the value
   }
 
+  function operatorBtnPressed(operator){
+    value1 = parseInt(document.getElementById("inputBox").value);     //Gets the current value in the input box
+    currentOperator = operator;                              //Sets the current operator to the operator clicked
+    newLine = true;                                          //Sets newLine to true so that the next button clicked will replace the value
+  }
+
+  function equalsbtnPressed(){
+    var value2 = parseInt(document.getElementById("inputBox").value); //Gets the current value in the input box
+    var finalTotal;                                                   //Variable to store the result
+
+    //Checks which operator was clicked and performs the corresponding operation
+    if(currentOperator === "+"){
+      finalTotal = value1 + value2;
+    } else if(currentOperator === "-"){
+      finalTotal = value1 - value2;
+    } else if(currentOperator === "*"){
+      finalTotal = value1 * value2;
+    } else if(currentOperator === "/"){
+      finalTotal = value1 / value2;
+    }
+
+    document.getElementById("inputBox").value = result;         //Displays the result in the input box
+    newLine = true;                                             //Sets newLine to true so that the next button clicked will replace the value
+  }
 }
