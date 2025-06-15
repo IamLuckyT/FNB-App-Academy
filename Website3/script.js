@@ -40,7 +40,7 @@ function digitBtnPressed(button){
       finalTotal = value1 / value2;
     }
 
-    document.getElementById("inputBox").value = result;         //Displays the result in the input box
+    document.getElementById("inputBox").value = finalTotal;         //Displays the result in the input box
     newLine = true;                                             //Sets newLine to true so that the next button clicked will replace the value
   }
 }
