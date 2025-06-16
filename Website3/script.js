@@ -16,7 +16,7 @@ function digitBtnPressed(button){
 
   //Event handler for when AC button is pressed
   function btnACPressed(){
-    document.getElementById("inputBox").value = "";                   //Clears the input box
+    document.getElementById("inputBox").value = 0;                   //Clears the input box
     newLine = true;                                                   //Sets newLine to true so that the next button clicked will replace the value
   }
 
