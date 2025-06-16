@@ -8,11 +8,12 @@ var currentOperator;
 function digitBtnPressed(button){
   if(newLine){
    document.getElementById("inputBox").value = button;                //If newLine is true, it will replace the current value with the button clicked 
-   newLine = false;                                                  //Sets newLine to false so that the next button clicked will not replace the value
+   newLine = false;                                                     //Sets newLine to false so that the next button clicked will not replace the value
   } else {
-  var currentValue = document.getElementById("inputBox").value;      //Gets the current value in the input box
-  document.getElementById("inputBox").value = currentValue + button; //Adds the value clicked and the button
-  }
+    var currentValue = document.getElementById("inputBox").value;      //Gets the current value in the input box
+    document.getElementById("inputBox").value = currentValue + button; //Adds the value clicked and the button
+    }
+}
 
   //Event handler for when AC button is pressed
   function btnACPressed(){
