@@ -45,9 +45,11 @@ function digitBtnPressed(button){
       case "/":
         finalTotal = value1 / value2;                                 //Divides the two values
         break;
+      default:
+        finalTotal = value2;                                         //If no operator was clicked, it will display an error
+        break;
     }
     document.getElementById("inputBox").value = finalTotal;           //Displays the result in the input box
     newLine = true;                                                   //Sets newLine to true so that the next button clicked will replace the value
     value1 = 0;
   }
-}
