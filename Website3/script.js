@@ -27,7 +27,7 @@ function digitBtnPressed(button){
     newLine = true;                                                     //Sets newLine to true so that the next button clicked will replace the value
   }
 
-  function equalsbtnPressed(){
+  function equalsBtnPressed(){
     value2 = parseInt(document.getElementById("inputBox").value);       //Gets the current value in the input box
     var finalTotal;                                                     //Variable to store the result
 
