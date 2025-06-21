@@ -4,3 +4,13 @@ table {
     border-collapse: collapse;
     font: normal 3em Arial, Helvetica,sans-serif;
 }
+
+tr {
+    height: 16.02vh;                                /* 16.02vh is approximately 100px */
+    background-color: #4e494d;
+}
+
+td {
+    width: 25vw;                                    /* 25vw is approximately 200px */
+    border: 1px solid #4e494d;                    
+}
