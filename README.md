@@ -10,11 +10,14 @@
         <a href="https://iamluckyt.github.io/FNB-App-Academy/Website1/index.html"> Website1</a>
     </li>
     <li>
-      <a href="https://iamluckyt.github.io/FNB-App-Academy/WebsiteA/index.html"> WebsiteA</a>
+      <a href="https://iamluckyt.github.io/FNB-App-Academy/WebsiteA/index.html"> WebsiteA (Avengers App)</a>
     </li> 
     <li>
-      <a href="https://iamluckyt.github.io/FNB-App-Academy/Website2/index.html"> Website2</a>
+      <a href="https://iamluckyt.github.io/FNB-App-Academy/Website2/index.html"> Website2 (Pine City Zoo App)</a>
     </li>  
+    <li>
+      <a href="https://iamluckyt.github.io/FNB-App-Academy/Website3/index.html"> Website3 (Calculator App)</a>
+    </li> 
   </ul>
 
 </p>
