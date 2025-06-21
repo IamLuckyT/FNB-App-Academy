@@ -51,5 +51,5 @@ function digitBtnPressed(button){
     }
     document.getElementById("inputBox").value = finalTotal;             //Displays the result in the input box
     newLine = true;                                                     //Sets newLine to true so that the next button clicked will replace the value
-    value1 = 0;
+    value1 = 0;                                                         //Resets value1 to 0 so that the next operation will not use the previous value
   }
