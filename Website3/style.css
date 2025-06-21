@@ -14,3 +14,12 @@ td {
     width: 25vw;                                    /* 25vw is approximately 200px */
     border: 1px solid #4e494d;                    
 }
+
+#inputBox {                                         /*We use # and not . because it is an ID and not a class*/
+    width: 100%;                                    
+    font-size: 2em;
+    color: #fff;
+    border: 0px;
+    text-align: right;
+    background-color: #4e494d;
+}
