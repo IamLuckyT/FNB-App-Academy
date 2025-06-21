@@ -7,7 +7,7 @@
    To view the sites you can click on the links below:
   <ul>
     <li>
-        <a href="https://iamluckyt.github.io/FNB-App-Academy/Website1/index.html"> Website1</a>
+        <a href="https://iamluckyt.github.io/FNB-App-Academy/Website1/index.html"> Website1 (MyTube)</a>
     </li>
     <li>
       <a href="https://iamluckyt.github.io/FNB-App-Academy/WebsiteA/index.html"> WebsiteA (Avengers App)</a>
