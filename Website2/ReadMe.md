@@ -1,4 +1,4 @@
-<h1> Welcome to the PINE CITY ZOO</h1>
+<h1> Welcome to the PINE CITY ZOO <img src ="images/logo.png" width = 10%</h1>
 
 <p> 
     The site contains more infomation about the Pine City Zoo, the Zoo has Several features including:
