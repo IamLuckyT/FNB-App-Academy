@@ -23,3 +23,15 @@ td {
     text-align: right;
     background-color: #4e494d;
 }
+
+.digitBtn {
+    background-color: #807e80;
+}
+
+.operatorBtn {
+    background-color: #ff9e06;
+}
+
+.ACBtn {
+    background-color: #656165;
+}
