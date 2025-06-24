@@ -28,7 +28,7 @@
             output = "<table>";                                                         // Initialize the output variable with a table tag
 
             for (a in data) {                                                            // Loop through each contact in the data array
-                output += 
+                output += `
                 <tr>
                     <td>
                         <img src="${rootPath}controller/uploads/${data[a].avatar}"/>        
@@ -43,6 +43,7 @@
                 //first <td> Displays the avatar image where data[a].avatar fetches the avatar inside the URL from the rootPath
                 //Second <td> Displays the contact's first name using data[a].firstname
                 //Third <td> Displays the contact's last name using data[a].lastname
+                    `
             }
             output += "</table>";                                                       // Close the table tag
             document.getElementById("table").innerHTML = output;                        // Set the inner HTML of the table div to the output variable
