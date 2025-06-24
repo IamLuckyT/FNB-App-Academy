@@ -40,10 +40,11 @@
                         <h5>${data[a].lastname}</h5>  
                     </td>      
                 </tr> 
+                `                                                                          // Create a table row for each contact with three table data cells
                 //first <td> Displays the avatar image where data[a].avatar fetches the avatar inside the URL from the rootPath
                 //Second <td> Displays the contact's first name using data[a].firstname
                 //Third <td> Displays the contact's last name using data[a].lastname
-                    `
+                    
             }
             output += "</table>";                                                       // Close the table tag
             document.getElementById("table").innerHTML = output;                        // Set the inner HTML of the table div to the output variable
