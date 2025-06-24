@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="fetchContacts()">                                     <!--Call fetchContacts when the page loads -->
     <div id="table">Contacts loading...</div>
     <button id="refresh" type="button">Refresh</button>
     <button id="addContact" type="button">Add Contact</button>
 
     <script src="config.js"></script>
+
     <script>
-        
+        function fetchContacts(){
+            fetch(rootPath + "controller/get-contacts/")            // Fetch the contacts from the server
+            .then(function(response) {                              // Check if the response is ok
+                return response.json();                             // Parse the response as JSON       
+            })
+            .then(function(data) {                                   // Handle the parsed data
+                displayOutput(data);                                // Call displayOutput with the data
+            })
+            }
+        function displayOutput(data) {                              // Display the output in a table format
+            output = "<table>";                                     // Initialize the output variable with a table tag
+
+            for(a in data) {                                        // Loop through each contact in the data
+                output += 
+                <tr>
+                    <td><img src="${rootPath}controller/uploads/${data[a].avatar}"/></td>  
+                </tr> 
+            }
+        }
     </script>
 </body>
 </html>
