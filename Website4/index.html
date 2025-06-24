@@ -13,12 +13,12 @@
     <script src="config.js"></script>
 
     <script>
-        function fetchContacts(){
+        function fetchContacts(){                                   
             fetch(rootPath + "controller/get-contacts/")            // Fetch the contacts from the server
             .then(function(response) {                              // Check if the response is ok
                 return response.json();                             // Parse the response as JSON       
             })
-            .then(function(data) {                                   // Handle the parsed data
+            .then(function(data) {                                  // Handle the parsed data
                 displayOutput(data);                                // Call displayOutput with the data
             })
             }
@@ -28,9 +28,22 @@
             for(a in data) {                                        // Loop through each contact in the data
                 output += 
                 <tr>
-                    <td><img src="${rootPath}controller/uploads/${data[a].avatar}"/></td>  
+                    <td>
+                        <img src="${rootPath}controller/uploads/${data[a].avatar}"/>        
+                    </td> 
+                    <td>
+                        <h5>${data[a].firstname}</h5>
+                    </td>  
+                    <td>
+                        <h5>${data[a].lastname}</h5>  
+                    </td>      
                 </tr> 
+                //first <td> Uses the avatar URL from the contact data and Display the avatar image where data[a].avatar fetches the avatar inside the URL
+                //Second <td> Displays the contact's first name using data[a].firstname
+                //Third <td> Displays the contact's last name using data[a].lastname
             }
+            output += "</table>";                                   // Close the table tag
+            document.getElementById("table").innerHTML = output;    // Set the inner HTML of the table div to the output variable
         }
     </script>
 </body>
