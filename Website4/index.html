@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="fetchContacts()">                                     <!--Call fetchContacts when the page loads -->
+<body onload="fetchContacts()">                                                         <!--Calls fetchContacts function when the page loads -->
     <div id="table">Contacts loading...</div>
     <button id="refresh" type="button">Refresh</button>
     <button id="addContact" type="button">Add Contact</button>
 
-    <script src="config.js"></script>
+    <script src="config.js"></script>                                                   <!-- Include the config.js file which contains the rootPath variable that is used 
+                                                                                        to call the API key where all functions of the API are found -->
 
     <script>
+        document.getElementById("refresh").addEventListener("click", fetchContacts);    // Add an event listener to the refresh button to call fetchContacts when clicked
         function fetchContacts(){                                   
-            fetch(rootPath + "controller/get-contacts/")            // Fetch the contacts from the server
-            .then(function(response) {                              // Check if the response is ok
-                return response.json();                             // Parse the response as JSON       
+            fetch(rootPath + "controller/get-contacts/")                                // Fetch the contacts from the server which is defined in the config.js file
+            .then(function(response) {                                                  // Check if the response is ok
+                return response.json();                                                 // Parse the response as JSON       
             })
-            .then(function(data) {                                  // Handle the parsed data
-                displayOutput(data);                                // Call displayOutput with the data
+            .then(function(data) {                                                      // Handle the parsed data
+                displayOutput(data);                                                    // Call displayOutput with the data
             })
             }
-        function displayOutput(data) {                              // Display the output in a table format
-            output = "<table>";                                     // Initialize the output variable with a table tag
+        function displayOutput(data) {                                                  // Display the output in a table format
+            output = "<table>";                                                         // Initialize the output variable with a table tag
 
-            for(a in data) {                                        // Loop through each contact in the data
+            for (a in data) {                                                            // Loop through each contact in the data array
                 output += 
                 <tr>
                     <td>
@@ -38,12 +40,12 @@
                         <h5>${data[a].lastname}</h5>  
                     </td>      
                 </tr> 
-                //first <td> Uses the avatar URL from the contact data and Display the avatar image where data[a].avatar fetches the avatar inside the URL
+                //first <td> Displays the avatar image where data[a].avatar fetches the avatar inside the URL from the rootPath
                 //Second <td> Displays the contact's first name using data[a].firstname
                 //Third <td> Displays the contact's last name using data[a].lastname
             }
-            output += "</table>";                                   // Close the table tag
-            document.getElementById("table").innerHTML = output;    // Set the inner HTML of the table div to the output variable
+            output += "</table>";                                                       // Close the table tag
+            document.getElementById("table").innerHTML = output;                        // Set the inner HTML of the table div to the output variable
         }
     </script>
 </body>
