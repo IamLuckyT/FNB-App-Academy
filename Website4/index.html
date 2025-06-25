@@ -15,6 +15,7 @@
 
     <script>
         document.getElementById("refresh").addEventListener("click", fetchContacts);    // Add an event listener to the refresh button to call fetchContacts when clicked
+        
         function fetchContacts(){                                   
             fetch(rootPath + "controller/get-contacts/")                                // Fetch the contacts from the server which is defined in the config.js file
             .then(function(response) {                                                  // Check if the response is ok
@@ -27,11 +28,11 @@
         function displayOutput(data) {                                                  // Display the output in a table format
             output = "<table>";                                                         // Initialize the output variable with a table tag
 
-            for (a in data) {                                                            // Loop through each contact in the data array
-                output += `
+            for (a in data) {                                                           // Loop through each contact in the data array
+                output += `                                                              
                 <tr>
                     <td>
-                        <img src="${rootPath}controller/uploads/${data[a].avatar}" width ="55"/>        
+                        <img src="${rootPath}controller/uploads/${data[a].avatar}" width ="60"/>        
                     </td> 
                     <td>
                         <h5>${data[a].firstname}</h5>
