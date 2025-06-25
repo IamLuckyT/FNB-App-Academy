@@ -7,13 +7,27 @@
 </head>
 <body>
     <br/>
-    <form id="editForm">
-        <label for="firstname">First name:</label>
-        <input type="text" id="firstname" name="firstname" required>
+    <form id="editForm">                                                        <!-- Form to add a new contact -->
+        <label for="firstName">First Name:</label>                              <!-- Form label for firstName -->
+        <input type="text" id="firstName" name="firstName" required>            <!-- Input field for firstName, required -->
         <br/>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="lastName">Last Name:</label>                                <!-- Form label for laststName -->
+        <input type="text" id="lastName=" name="lastName" required>             <!-- Input field for lastName, required -->
         <br/>
-        <button type="submit">Add Contact</button>
+        <label for="mobile">Mobile:</label>                                     <!-- Form label for mobile -->
+        <input type="text" id="mobile" name="mobile" required>                  <!-- Input field for mobile, required-->
+        <br/>
+        <label for="email">Email:</label>                                       <!-- Form label for email -->
+        <input type="email" id="email" name="email" required>                   <!-- Input field for email, required -->
+        <br/>
+        <label for="avatar">Select a file</label>                               <!-- Form label for avatar -->
+        <input type="file" id="avatar" name="avatar" required>                  <!-- Input field for avatar, required -->
+        <br/>
+        <button type="submit" id="submitForm">Submit</button>                   <!-- Submit button to submit the form -->
+    </form>
+    </br>
+    <button id="homeLink" type="button">Home</button>                           <!-- Button to navigate to home page -->
+
+    <script src="config.js"></script>                                           <!-- Link to external JavaScript configuration file -->
 </body>
 </html>
