@@ -29,5 +29,13 @@
     <button id="homeLink" type="button">Home</button>                           <!-- Button to navigate to home page -->
 
     <script src="config.js"></script>                                           <!-- Link to external JavaScript configuration file -->
+    <script>
+        function submitForm(e){
+            e.preventDefault();                                                 // Prevent the default form submission behavior 
+        
+            const form = new FormData(document.querySelector('#editForm'));     // Create a new FormData object from the form
+            form.append('apiKey', apiKey);                                      // Append the API key to the FormData object
+        }
+    </script>
 </body>
 </html>
