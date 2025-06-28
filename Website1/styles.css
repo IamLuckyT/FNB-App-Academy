@@ -60,6 +60,20 @@ body.no-scroll {
   flex-shrink:0;
 }
 
+/*Search bar styles */
+.search-bar {
+  flex-grow: 1; /* Allows the search bar to take available space */
+  margin: 0 20px; /* Adds margin on left and right */
+  display: flex; /* Uses flexbox for layout */
+}
+.search-bar input {
+  flex-grow: 1; /* Input takes available space */
+  padding: 8px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border around the input */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for input text */
+}
+
 /* Menu button styles */
 #menu-toggle {
   font-size: 24px; /* Sets the font size of the button */
