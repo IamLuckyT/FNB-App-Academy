@@ -48,9 +48,16 @@ body.no-scroll {
   border-bottom: 1px solid #ccc; /* Adds border under the top bar */
   padding: 10px 20px; /* Adds padding around the top bar */
   justify-content: space-between; /* Aligns content with space in between */
-  align-items: center; /* Ensures vertical centering */
   width: 100%; /* Full width of the screen */
-  z-index: 10; /* Keeps the top bar above other content */
+  z-index: 1000; /* Keeps the top bar above other content */
+  top: 0;
+}
+
+.top-bar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:0;
+  flex-shrink:0;
 }
 
 /* Menu button styles */
@@ -313,6 +320,9 @@ body.dark-mode #menu-toggle, body.dark-mode #close-sidebar {
         font-size: 12px; /* Smaller font size for mobile */
         padding: 6px 10px; /* Smaller padding */
     }
+  .top-bar .logo {
+    font-size: 16px;
+    margin-left: 0;
 }
 
 /* Smooth transition for changes between light/dark modes */
