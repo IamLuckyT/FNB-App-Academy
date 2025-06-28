@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Contact</title>
+    <s
 </head>
 <body>
     <br/>
@@ -35,6 +36,11 @@
         
             const form = new FormData(document.querySelector('#editForm'));     // Create a new FormData object from the form
             form.append('apiKey', apiKey);                                      // Append the API key to the FormData object
+        
+            fetch(rootPath + 'controller/insert-contact', (                     //
+            method: 'POST',
+            headers: {'Accept': 'application/json, *.*'}
+            ))
         }
     </script>
 </body>
