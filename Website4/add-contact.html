@@ -37,10 +37,22 @@
             const form = new FormData(document.querySelector('#editForm'));     // Create a new FormData object from the form
             form.append('apiKey', apiKey);                                      // Append the API key to the FormData object
         
-            fetch(rootPath + 'controller/insert-contact', (                     //
+            fetch(rootPath + 'controller/insert-contact', (                     // 
             method: 'POST',
-            headers: {'Accept': 'application/json, *.*'}
+            headers: {'Accept': 'application/json, *.*'},
+            body: form
             ))
+            .then(function(response){
+                return response.text();                                         // Parse the response as text
+            })
+            .then(function(data){
+                if (data === 'success') {                                       // Check if the response is 'success'
+                    alert('Contact added successfully!');                       // Alert success message
+                    window.location.href = rootPath + 'index.html';             // Redirect to home page
+                } else {
+                    alert('Error adding contact: ' + data);                     // Alert error message
+                }
+            })
         }
     </script>
 </body>
