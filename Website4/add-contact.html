@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Contact</title>
-    <s
+    
 </head>
 <body>
     <br/>
@@ -31,13 +31,16 @@
 
     <script src="config.js"></script>                                           <!-- Link to external JavaScript configuration file -->
     <script>
+        document.getElementById("submitForm").addEventListener('click', submitForm);    // Add event listener to the submit button
+        document.getElementById("homeLink").addEventListener('click', homeLink);        // Add event listener to the home button
+        
         function submitForm(e){
             e.preventDefault();                                                 // Prevent the default form submission behavior 
         
             const form = new FormData(document.querySelector('#editForm'));     // Create a new FormData object from the form
             form.append('apiKey', apiKey);                                      // Append the API key to the FormData object
         
-            fetch(rootPath + 'controller/insert-contact', (                     // 
+            fetch(rootPath + 'controller/insert-contact', (                     // Fetch API to send the form data
             method: 'POST',
             headers: {'Accept': 'application/json, *.*'},
             body: form
@@ -48,11 +51,17 @@
             .then(function(data){
                 if (data === 'success') {                                       // Check if the response is 'success'
                     alert('Contact added successfully!');                       // Alert success message
-                    window.location.href = rootPath + 'index.html';             // Redirect to home page
+                    //window.location.href = rootPath + 'index.html';           // Redirect to home page (METHOD 2)
+                    homeLink();                                                 // Redirect to home page (METHOD 1)
                 } else {
-                    alert('Error adding contact: ' + data);                     // Alert error message
+                    alert('Error adding contact: ' + data);                     // Alert error message   
+                    homeLink();                                                 // Redirect to home page
                 }
             })
+        }
+
+        function homeLink(){
+            window.open('index.html', '_self');                                  // Redirect to home page (METHOD 1)
         }
     </script>
 </body>
