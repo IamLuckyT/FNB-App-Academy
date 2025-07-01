@@ -15,7 +15,8 @@
 
     <script>
         document.getElementById("refresh").addEventListener("click", fetchContacts);    // Add an event listener to the refresh button to call fetchContacts when clicked
-        
+        document.getElementById("addContact").addEventListener("click", addContact);
+
         function fetchContacts(){                                   
             fetch(rootPath + "controller/get-contacts/")                                // Fetch the contacts from the server which is defined in the config.js file
             .then(function(response) {                                                  // Check if the response is ok
@@ -50,6 +51,10 @@
             output += "</table>";                                                       // Close the table tag
             document.getElementById("table").innerHTML = output;                        // Set the inner HTML of the table div to the output variable
         }
+
+        function addContact() {                                                      // Function to add a contact
+            window.open('add-contact.html', '_self');
+        }                                                                           // Opens the index.html page in the same window to add a contact
     </script>
 </body>
 </html>

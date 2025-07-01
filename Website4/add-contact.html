@@ -40,7 +40,7 @@
             const form = new FormData(document.querySelector('#editForm'));     // Create a new FormData object from the form
             form.append('apiKey', apiKey);                                      // Append the API key to the FormData object
         
-            fetch(rootPath + 'controller/insert-contact', (                     // Fetch API to send the form data
+            fetch(rootPath + 'controller/insert-contact/', (                     // Fetch API to send the form data
             method: 'POST',
             headers: {'Accept': 'application/json, *.*'},
             body: form
