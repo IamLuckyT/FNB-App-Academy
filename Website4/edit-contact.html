@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Contact</title>
+        
+    </head>
+    <body>
+        <div id ="avatarImage">
+            <form id="editForm">                                                        <!-- Form to add a new contact -->
+                <label for="firstName">First Name:</label>                              <!-- Form label for firstName -->
+                <input type="text" id="firstName" name="firstName" readonly>            <!-- Input field for firstName, required -->
+                <br/>
+                <label for="lastName">Last Name:</label>                                <!-- Form label for laststName -->
+                <input type="text" id="lastName=" name="lastName" readonly>             <!-- Input field for lastName, required -->
+                <br/>
+                <label for="mobile">Mobile:</label>                                     <!-- Form label for mobile -->
+                <input type="text" id="mobile" name="mobile" readonly>                  <!-- Input field for mobile, required-->
+                <br/>
+                <label for="email">Email:</label>                                       <!-- Form label for email -->
+                <input type="email" id="email" name="email" readonly>                   <!-- Input field for email, required -->
+                <br/>
+                <label for="avatar">Change Profile Image</label>                        <!-- Form label for avatar -->
+                <input type="file" id="avatar" name="avatar" hidden>                    <!-- Input field for avatar, required -->
+                <br/>
+                <button type="submit" id="submitForm" hidden>Submit</button>            <!-- Submit button to submit the form -->
+            </form>
+        </div>
+        </br>
+        <button id="homeLink" type="button">Home</button>                               <!-- Button to navigate to home page -->
+        <button id="editContact" type="button">Edit</button>                            <!-- Button to edit contact -->
+        <button id="deleteContact" type="button">Delete</button>                        <!-- Button to delete contact -->
+
+        <script src="config.js"></script>                                               <!-- Include config.js for configuration -->    
+        <script></script>
+    </body>
+</html>                                                                             <!-- Include edit-contact.js for functionality -->
