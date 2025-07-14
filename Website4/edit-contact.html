@@ -33,6 +33,16 @@
         <button id="deleteContact" type="button">Delete</button>                        <!-- Button to delete contact -->
 
         <script src="config.js"></script>                                               <!-- Include config.js for configuration -->    
-        <script></script>
+        <script>
+            var id = getId();                                                           // Call getId function to extract the id from the URL        
+            console.log("The id is: " + id);                                            // Log the id to the console    
+                                                                                        
+            function getId(){
+                var url = window.location.href;                                         // Get the current URL
+                var pos = url.search("=");                                              // Find the position of the '=' character
+                var id = url.slice(pos +1);                                             // Extract the substring after the '=' character
+                return id;                                                              // Return the extracted id
+            }
+        </script>
     </body>
-</html>                                                                             <!-- Include edit-contact.js for functionality -->
+</html>                                                                                 <!-- Include edit-contact.js for functionality -->
