@@ -2,7 +2,7 @@
 
 <p> 
   The repo contains all projects I am currently busy with, which are tasks given to me by FNB App Academy.
-  So far the repo contains two projects all under the websites folder
+  
   <br>
    To view the sites you can click on the links below:
   <ul>
