@@ -31,7 +31,7 @@
 
             for (a in data) {                                                           // Loop through each contact in the data array
                 output += `                                                              
-                <tr>
+                <tr onclick="editContact(${data[a].id})">                               <!-- Create a table row that calls editContact with the contact's id when clicked -->
                     <td>
                         <img src="${rootPath}controller/uploads/${data[a].avatar}" width ="80"/>        
                     </td> 
@@ -52,9 +52,13 @@
             document.getElementById("table").innerHTML = output;                        // Set the inner HTML of the table div to the output variable
         }
 
-        function addContact() {                                                      // Function to add a contact
-            window.open('add-contact.html', '_self');
-        }                                                                           // Opens the index.html page in the same window to add a contact
+        function addContact() {                                                         // Function to add a contact
+            window.open("add-contact.html", "_self");                                   // Opens the index.html page in the same window to add a contact
+        }
+        
+        function editContact(id) {                                                      // Function to edit a contact
+            window.open("edit-contact.html?id=" + id, "_self");                         // Opens the edit-contact.html page with the contact's id as a query parameter in the same window   
+        }
     </script>
 </body>
 </html>
