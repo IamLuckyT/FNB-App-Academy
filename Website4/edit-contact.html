@@ -6,7 +6,7 @@
         <title>Add Contact</title>
         
     </head>
-    <body>
+    <body onload="getContact()">                                                        <!-- Call getContact function when the page loads -->
         <div id ="avatarImage">
             <form id="editForm">                                                        <!-- Form to add a new contact -->
                 <label for="firstName">First Name:</label>                              <!-- Form label for firstName -->
@@ -34,7 +34,8 @@
 
         <script src="config.js"></script>                                               <!-- Include config.js for configuration -->    
         <script>
-            var id = getId();                                                           // Call getId function to extract the id from the URL        
+            var id = getId();                                                           // Call getId function to extract the id from the URL     
+            document.getElementById("homeLink").addEventListener("click", homeLink);    // Add event listener to homeLink button
             console.log("The id is: " + id);                                            // Log the id to the console    
                                                                                         
             function getId(){
@@ -42,6 +43,20 @@
                 var pos = url.search("=");                                              // Find the position of the '=' character
                 var id = url.slice(pos +1);                                             // Extract the substring after the '=' character
                 return id;                                                              // Return the extracted id
+            }
+
+            function getContact(){
+                fetch(rootPath + 'controller/get-contacts/?id=' + id)
+                .then(function(response){
+                    return response.json();                                             // Parse the JSON response
+                })
+                .then(function(data){
+                    console.log(data);                                                 // Log the data to the console
+                })
+            }
+
+            function homeLink() {
+                window.open("index.html", "_self");                                    // Navigate to the home page
             }
         </script>
     </body>
