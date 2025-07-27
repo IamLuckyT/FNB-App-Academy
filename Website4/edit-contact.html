@@ -6,59 +6,65 @@
         <title>Add Contact</title>
         
     </head>
-    <body onload="getContact()">                                                        <!-- Call getContact function when the page loads -->
-        <div id ="avatarImage">
-            <form id="editForm">                                                        <!-- Form to add a new contact -->
-                <label for="firstName">First Name:</label>                              <!-- Form label for firstName -->
-                <input type="text" id="firstName" name="firstName" readonly>            <!-- Input field for firstName, required -->
+    <body onload = "getContact()">                                                              <!-- Call getContact function when the page loads -->
+        <div id = "avatarImage">
+            <form id = "editForm">                                                              <!-- Form to add a new contact -->
+                <label for = "firstName">First Name:</label>                                    <!-- Form label for firstName -->
+                <input type = "text" id = "firstName" name = "firstName" readonly>              <!-- Input field for firstName, required -->
                 <br/>
-                <label for="lastName">Last Name:</label>                                <!-- Form label for laststName -->
-                <input type="text" id="lastName=" name="lastName" readonly>             <!-- Input field for lastName, required -->
+                <label for = "lastName">Last Name:</label>                                      <!-- Form label for laststName -->
+                <input type = "text" id = "lastName=" name = "lastName" readonly>               <!-- Input field for lastName, required -->
                 <br/>
-                <label for="mobile">Mobile:</label>                                     <!-- Form label for mobile -->
-                <input type="text" id="mobile" name="mobile" readonly>                  <!-- Input field for mobile, required-->
+                <label for="mobile">Mobile:</label>                                             <!-- Form label for mobile -->
+                <input type = "text" id = "mobile" name = "mobile" readonly>                    <!-- Input field for mobile, required-->
                 <br/>
-                <label for="email">Email:</label>                                       <!-- Form label for email -->
-                <input type="email" id="email" name="email" readonly>                   <!-- Input field for email, required -->
+                <label for = "email">Email:</label>                                             <!-- Form label for email -->
+                <input type = "email" id = "email" name = "email" readonly>                     <!-- Input field for email, required -->
                 <br/>
-                <label for="avatar">Change Profile Image</label>                        <!-- Form label for avatar -->
-                <input type="file" id="avatar" name="avatar" hidden>                    <!-- Input field for avatar, required -->
+                <label for = "avatar">Change Profile Image</label>                              <!-- Form label for avatar -->
+                <input type = "file" id = "avatar" name = "avatar" hidden>                      <!-- Input field for avatar, required -->
                 <br/>
-                <button type="submit" id="submitForm" hidden>Submit</button>            <!-- Submit button to submit the form -->
+                <button type = "submit" id = "submitForm" hidden>Submit</button>                <!-- Submit button to submit the form -->
             </form>
         </div>
         </br>
-        <button id="homeLink" type="button">Home</button>                               <!-- Button to navigate to home page -->
-        <button id="editContact" type="button">Edit</button>                            <!-- Button to edit contact -->
-        <button id="deleteContact" type="button">Delete</button>                        <!-- Button to delete contact -->
+        <button id="homeLink" type="button">Home</button>                                       <!-- Button to navigate to home page -->
+        <button id = "editContact" type = "button">Edit</button>                                <!-- Button to edit contact -->
+        <button id = "deleteContact" type = "button">Delete</button>                            <!-- Button to delete contact -->
 
-        <script src="config.js"></script>                                               <!-- Include config.js for configuration -->    
+        <script src = "config.js"></script>                                                     <!-- Include config.js for configuration -->    
         <script>
-            var id = getId();                                                           // Call getId function to extract the id from the URL     
-            document.getElementById("homeLink").addEventListener('click', homeLink);    // Add event listener to homeLink button
-            console.log("The id is: " + id);                                            // Log the id to the console    
+            var id = getId();                                                                   // Call getId function to extract the id from the URL     
+            document.getElementById("homeLink").addEventListener('click', homeLink);            // Add event listener to homeLink button
+            console.log("The id is: " + id);                                                    // Log the id to the console    
                                                                                         
             function getId(){
-                var url = window.location.href;                                         // Get the current URL
-                var pos = url.search("=");                                              // Find the position of the '=' character
-                var id = url.slice(pos +1);                                             // Extract the substring after the '=' character
-                return id;                                                              // Return the extracted id
+                var url = window.location.href;                                                 // Get the current URL
+                var pos = url.search("=");                                                      // Find the position of the '=' character
+                var id = url.slice(pos +1);                                                     // Extract the substring after the '=' character
+                return id;                                                                      // Return the extracted id
             }
 
             function getContact(){
                 fetch(rootPath + 'controller/get-contacts/?id=' + id)
                 .then(function(response){
-                    return response.json();                                             // Parse the JSON response
+                    return response.json();                                                     // Parse the JSON response
                 })
-                .then(function(data){                                                   // Function for displayig contact info
-                    console.log(data);                                                  // Log the data to the console
+                .then(function(data){                                                           // Function for displaying contact info
+                    displayOutput(data);                                                        // Call displayOutput function to display the contact info
+                    console.log(data);                                                          // Log the data to the console
                 })
             }
 
-            function homeLink() {
-                window.open("index.html", "_self");                                     // Navigate to the home page
+            function homeLink(){
+                window.open("index.html", "_self");                                             // Navigate to the home page
             }
-    
+            
+            function displayOutput(data){
+                avatarImg = <img src = "${rootPath}/controller/uploads/${data[0].avatar}" 
+                    wifth = "200px"/>                                                           // Create an image element for the avatar with width of 200px
+                document.getElementById("avatarImage").innerHTML = avatarImg;                   // Set the inner HTML of the avatarImage div
+            }
         </script>
     </body>
-</html>                                                                                 <!-- Include edit-contact.js for functionality -->
+</html>                                                                                         <!-- Include edit-contact.js for functionality -->
