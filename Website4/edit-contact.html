@@ -64,6 +64,11 @@
                 avatarImg = <img src = "${rootPath}/controller/uploads/${data[0].avatar}" 
                     wifth = "200px"/>                                                           // Create an image element for the avatar with width of 200px
                 document.getElementById("avatarImage").innerHTML = avatarImg;                   // Set the inner HTML of the avatarImage div
+                document.getElementById("firstName").value = data[0].firstName;                 // Set the value of firstName input field
+                document.getElementById("lastName").value = data[0].lastName;                   // Set the value of lastName input field
+                document.getElementById("mobile").value = data[0].mobile;                       // Set the value of mobile input field
+                document.getElementById("email").value = data[0].email;                         // Set the value of email input field
+                
             }
         </script>
     </body>
