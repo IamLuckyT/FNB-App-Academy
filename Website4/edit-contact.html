@@ -36,6 +36,7 @@
         <script>
             var id = getId();                                                                   // Call getId function to extract the id from the URL     
             document.getElementById("homeLink").addEventListener('click', homeLink);            // Add event listener to homeLink button
+            document.getElementById("editContact").addEventListener('click', editContact);      // Add event listener to editContact button
             console.log("The id is: " + id);                                                    // Log the id to the console    
                                                                                         
             function getId(){
@@ -44,7 +45,6 @@
                 var id = url.slice(pos +1);                                                     // Extract the substring after the '=' character
                 return id;                                                                      // Return the extracted id
             }
-
             function getContact(){
                 fetch(rootPath + 'controller/get-contacts/?id=' + id)
                 .then(function(response){
@@ -69,6 +69,15 @@
                 document.getElementById("mobile").value = data[0].mobile;                       // Set the value of mobile input field
                 document.getElementById("email").value = data[0].email;                         // Set the value of email input field
                 
+            }
+
+            function editContact(){
+                document.getElementById("firstName").readOnly = false;                          // Remove readonly attribute from firstName input field                     
+                document.getElementById("lastName").readOnly = false;                           // Remove readonly attribute from lastName input field
+                document.getElementById("mobile").readOnly = false;                             // Remove readonly attribute from lastName input field
+                document.getElementById("email").readOnly = false;                              // Remove readonly attribute from lastName input field
+                document.getElementById("avatar").hidden = false;                               // Remove readonly attribute from lastName input field
+                document.getElementById("submitForm").hidden = false;                           // Remove readonly attribute from lastName input field
             }
         </script>
     </body>
