@@ -38,7 +38,6 @@
             document.getElementById("homeLink").addEventListener('click', homeLink);            // Add event listener to homeLink button
             document.getElementById("editContact").addEventListener('click', editContact);      // Add event listener to editContact button
             document.getElementById("submitForm").addEventListener('click', submitForm);        // Add event listener to submitForm button
-            console.log("The id is: " + id);                                                    // Log the id to the console    
                                                                                         
             function getId(){
                 var url = window.location.href;                                                 // Get the current URL
@@ -53,7 +52,6 @@
                 })
                 .then(function(data){                                                           // Function for displaying contact info
                     displayOutput(data);                                                        // Call displayOutput function to display the contact info
-                    console.log(data);                                                          // Log the data to the console
                 })
             }
 
