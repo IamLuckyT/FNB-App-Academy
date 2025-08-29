@@ -1,4 +1,4 @@
-foods = []
+foods = []											
 prices = []
 total = 8
 
@@ -11,4 +11,16 @@ while True:
 		foods.append(food)
 		prices.append(price)
 
-	print()
+print()
+
+print("......... YOUR CART.........")
+
+for food in foods:
+	print(food)
+
+for price in prices:
+	total += price
+
+print(f"Your total is: R{total}")
+
+	
