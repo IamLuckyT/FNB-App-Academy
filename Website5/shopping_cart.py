@@ -10,3 +10,5 @@ while True:
 		price = float(input(f"Enter the price of the (food): R"))
 		foods.append(food)
 		prices.append(price)
+
+	print()
