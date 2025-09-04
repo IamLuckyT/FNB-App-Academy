@@ -23,4 +23,6 @@ for price in prices:
 
 print(f"Your total is: R{total}")
 
+print("Thank you for Shopping with us")
+
 	
