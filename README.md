@@ -1,7 +1,7 @@
 <h3>Welcome to my FNB App Academy Repository</h3>
 
 <p> 
-  The repo contains all projects I am currently busy with, which are tasks given to me by FNB App Academy.
+  The repo contains all projects I completed under the FNB App Academy and the project I am currently building which is MyTube (a makeup of Youtube).
   
   <br>
    To view the sites you can click on the links below:
